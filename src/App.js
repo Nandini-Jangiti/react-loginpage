@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
 import Welcome from './components/Welcome';
 
@@ -9,9 +9,11 @@ const App = () => {
     <Routes>
       <Route path="/" element={<LoginForm />} />
       <Route path="/welcome" element={<Welcome />} />
-
     </Routes>
 
+    // <div>
+    //   <LoginForm />
+    // </div>
   );
 };
 

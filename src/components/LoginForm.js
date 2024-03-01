@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
-// import Welcome from './Welcome';
+//import Welcome from './Welcome';
 import "../components/Login.css"
 
 
@@ -43,6 +42,7 @@ const LoginForm = () => {
         setErrors(formDataError);
         if (Object.keys(formDataError).length === 0) {
             console.log('Form submitted:', formData);
+           // window.location.href = '/Welcome'; 
             navigate('/welcome');
             //{ state: { username: formData.username } }
         }
@@ -85,11 +85,10 @@ const LoginForm = () => {
                 </div>
 
                 <div className="btn-container">
-                    {/* <Link to={{ pathname: "/welcome", state: { username: formData.username } }}></Link> */}
                     <button type="submit" disabled={isSubmitDisabled}>Login</button>
                 </div>
             </form>
-            <div className="signuplink">Not a member?<a href=""> Sign Up Now</a></div>
+            <div className="signuplink">Not a member?<a href=" "> Sign Up Now</a></div>
            
         </div>
         
